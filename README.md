@@ -1,13 +1,23 @@
 # Freezify
 Thank you for downloading the Freezify editor tool for VRChat Avatars! This was made by Riku.
 If you encounter any problems, errors, or issues, please send me a message on discord: Riku-san#6036
-I have a video of how to use the tool at: 
+I have a video of how to use the tool at: https://youtu.be/26DDG6dCyfU
 
-# =- Dependencies -=
+
+![](https://github.com/riku-san/Freezify/blob/main/Images/Demo.gif)
+
+
+# About
+This is a tool for the Unity Editor that setups the ability to freeze your avatar in game natively. It sets everything up via ParentContraint and RotationConstraint components, and makes animations effect both meshes instead of just your original mesh. 
+This was made in order to emulate the FreezeFrame mod from MelonLoader but natively in VRChat. However, this only works on one avatar at a time, I have successfully made a double freezable avatar and may eventually make support for it.
+Warning: This tool will double your stats with an avatar and will make majority of avatars VeryPoor quality. Please be aware of this before using.
+ > The Polygon count will be doubled
+
+# Dependencies
 Most recent World Constraint release - https://github.com/VRLabs/World-Constraint/releases
 
 
-# =- Instructions -=
+# Instructions
 1. Duplicate your avatar by clicking on it in the hierarchy and hitting Ctrl+D
 2. Remove the Animator, VRC Avatar Descriptor, and Pipeline Manager components from the second avatar
 3. Rename the meshes of the avatar. This prevents animation glitches during the creation of the freezable avatar.
@@ -32,7 +42,7 @@ please set up this animation in your FX animator, the animation will be under As
 You will also need to set a parameter on your avatar to trigger the animation
 
 
-# =- Known Issues -=
+# Known Issues
 1. I've hit set up constraints/all and my rotation constraints are parented to the wrong object
   > Make sure your armatures are exactly the same between both avatars before generating.
 2. My phys bones are resetting when freezing!
@@ -44,8 +54,7 @@ You will also need to set a parameter on your avatar to trigger the animation
   > Material change animations are not currently supported, you will have to recreate the animations yourself.
 
 
-# =- What everything is -=
-
+# What everything is
 Parameters
 -----------------
 Original Hip Bone - The hips bone of the original avatar
