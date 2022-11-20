@@ -10,6 +10,7 @@ I have a video of how to use the tool at: https://youtu.be/26DDG6dCyfU
 # About
 This is a tool for the Unity Editor that setups the ability to freeze your avatar in game natively. It sets everything up via ParentContraint and RotationConstraint components, and makes animations effect both meshes instead of just your original mesh. 
 This was made in order to emulate the FreezeFrame mod from MelonLoader but natively in VRChat. However, this only works on one avatar at a time, I have successfully made a double freezable avatar and may eventually make support for it.
+
 Warning: This tool will double your stats with an avatar and will make majority of avatars VeryPoor quality. Please be aware of this before using.
  > The Polygon count will be doubled
 
